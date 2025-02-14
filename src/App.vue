@@ -3,14 +3,18 @@ import { defineAsyncComponent } from 'vue';
 
 const NavBar = defineAsyncComponent(() => import(`./components/NavBar.vue`))
 const HeroSection = defineAsyncComponent(() => import(`./components/HeroSection.vue`))
+const HeroEduardo = defineAsyncComponent(() => import(`./components/HeroEduardo.vue`))
 const HeroTed = defineAsyncComponent(() => import(`./components/HeroTed.vue`))
 </script>
 
 <template>
-  <div class="bg-[#111827] min-h-screen">
-    <NavBar/>
-    <!-- <HeroSection/> -->
-    <HeroTed/>
+  <div class="bg-[#777]">
+    <div class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
+      <NavBar/>
+      <!-- <HeroSection/> -->
+      <!-- <HeroEduardo/> -->
+      <HeroTed/>
+    </div>
   </div>
 </template>
 

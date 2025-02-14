@@ -1,6 +1,5 @@
 <template>
     <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20 ">
-        <div class="text-white text-3xl font-bold">LOGO</div>
         <!-- Mobile Toggle Button -->
          <div class="md:hidden z-30">
          <button type="button" 
@@ -38,16 +37,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const Menu =ref([
-    {name:'Services',href:'#services'},
-    {name:'About Me',href:'#about'},
-    {name:'Skills',href:'#skills'},
-    {name:'Projects',href:'#projects'},
-    {name:'Testimonials',href:'#testimonials'},
-    {name:'Contact',href:'#contact'},
+const Menu = ref([
+    {name:'Home', href:''},
+    {name:'Projects', href:'projects'},
+    {name:'Contact', href:'#contact'},
 ]);
 
-const isMenuOpen =ref(false)
+const isMenuOpen = ref(false)
 const scrollToSection = (href : string) => 
 {
     isMenuOpen.value=false;

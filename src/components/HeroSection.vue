@@ -58,7 +58,7 @@
         </div>
     </section>
 </template>
-<script setup>
+<script setup lang="ts">
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 // AOS.init();
