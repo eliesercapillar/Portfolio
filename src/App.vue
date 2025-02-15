@@ -2,9 +2,11 @@
 import { defineAsyncComponent } from 'vue';
 
 const NavBar = defineAsyncComponent(() => import(`./components/NavBar.vue`))
-const HeroSection = defineAsyncComponent(() => import(`./components/HeroSection.vue`))
-const HeroEduardo = defineAsyncComponent(() => import(`./components/HeroEduardo.vue`))
-const HeroTed = defineAsyncComponent(() => import(`./components/HeroTed.vue`))
+const HeroSection = defineAsyncComponent(() => import(`./components/Hero/HeroSection.vue`))
+const HeroEduardo = defineAsyncComponent(() => import(`./components/Hero/HeroEduardo.vue`))
+const HeroTed = defineAsyncComponent(() => import(`./components/Hero/HeroTed.vue`))
+
+const Links = defineAsyncComponent(() => import(`./components/Links.vue`))
 </script>
 
 <template>
@@ -14,6 +16,7 @@ const HeroTed = defineAsyncComponent(() => import(`./components/HeroTed.vue`))
       <!-- <HeroSection/> -->
       <!-- <HeroEduardo/> -->
       <HeroTed/>
+      <Links/>
     </div>
   </div>
 </template>

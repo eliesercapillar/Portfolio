@@ -8,7 +8,7 @@
                 <div class="absolute inset-0 bg-blue-500 rounded-full" style="opacity: 0;"></div>
                 <div class="relative w-24 h-24 rounded-full overflow-hidden cursor-pointer">
                     <div style="opacity: 1;">
-                        <img src="../assets/img/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" width="200" height="200" loading="lazy"
+                        <img src="../../assets/img/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" width="200" height="200" loading="lazy"
                                     class="w-48 h-48 max-w-[200px] rounded-full object-cover"
                                     >
                     </div>
