@@ -1,6 +1,6 @@
 <template>
     <div>
-        <LinkWithIcon v-for="t in technologies.tech" :icon="t.icon" :key="t.name">{{ t.description }}</LinkWithIcon>
+        <LinkWithIcon v-for="t in technologies.data" :icon="t.icon" :key="t.name">{{ t.description }}</LinkWithIcon>
     </div>
 </template> 
 

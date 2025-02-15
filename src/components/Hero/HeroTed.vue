@@ -34,5 +34,7 @@
 </template>
 
 <script setup lang="ts">
+import Socials from '../Socials.vue';
+
 
 </script>

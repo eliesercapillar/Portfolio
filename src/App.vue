@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from 'vue';
+import NavBar from './components/NavBar.vue';
+import HeroSection from './components/Hero/HeroSection.vue';
+import HeroEduardo from './components/Hero/HeroEduardo.vue';
+import HeroTed from './components/Hero/HeroTed.vue';
 
-const NavBar = defineAsyncComponent(() => import(`./components/NavBar.vue`))
-const HeroSection = defineAsyncComponent(() => import(`./components/Hero/HeroSection.vue`))
-const HeroEduardo = defineAsyncComponent(() => import(`./components/Hero/HeroEduardo.vue`))
-const HeroTed = defineAsyncComponent(() => import(`./components/Hero/HeroTed.vue`))
-
-const Links = defineAsyncComponent(() => import(`./components/Links.vue`))
+import Technologies from './components/Technologies.vue';
 </script>
 
 <template>
@@ -16,7 +14,7 @@ const Links = defineAsyncComponent(() => import(`./components/Links.vue`))
       <!-- <HeroSection/> -->
       <!-- <HeroEduardo/> -->
       <HeroTed/>
-      <Links/>
+      <Technologies/>
     </div>
   </div>
 </template>

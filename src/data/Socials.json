@@ -1,0 +1,24 @@
+{
+    "data": [
+      {
+        "name": "GitHub",
+        "link": "#",
+        "icon": "github.svg"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "#",
+        "icon": "linkedin.svg"
+      },
+      {
+        "name": "Email",
+        "link": "elieser.capillar@gmail.com",
+        "icon": "mail.svg"
+      },
+      {
+        "name": "Itch",
+        "link": "#",
+        "icon": "itch.svg"
+      }
+    ]
+  }
