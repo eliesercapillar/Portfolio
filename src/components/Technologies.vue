@@ -1,4 +1,5 @@
 <template>
+    <h2 class="text-3xl mb-2">Technologies</h2>
     <div>
         <LinkWithIcon v-for="t in technologies.data" :icon="t.icon" :key="t.name">{{ t.description }}</LinkWithIcon>
     </div>

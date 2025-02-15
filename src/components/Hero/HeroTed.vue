@@ -21,7 +21,6 @@
                         <a href="../../../docs/Resume_Elieser_Capillar.pdf" target="_blank">
                             <button variant="outline">
                                 <span className="font-semibold">Resume</span>
-                                <FileDown className="ml-2 size-5" />
                             </button>
                         </a>
                         <Socials />

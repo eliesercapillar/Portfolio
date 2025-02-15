@@ -1,6 +1,6 @@
 <template>
-    <button class="bg-black text-white text-sm rounded max-h-[64px] max-w-[64px] px-3 py-0.5 font-semibold hover:bg-[#821]">
-        <img :src="iconPath" alt="Icon"class="w-5 h-5 mr-auto"></img>
+    <button class="bg-transparent text-white text-sm rounded max-h-[64px] max-w-[64px] px-3 py-0.5 font-semibold">
+        <img :src="iconPath" alt="Icon"class="w-5 h-5 mr-auto hover:bg-[#821]"></img>
         <slot/>
     </button>
 </template>
