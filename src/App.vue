@@ -8,7 +8,7 @@ import Technologies from './components/Technologies.vue';
 </script>
 
 <template>
-  <div class="min-h-screen relative">
+  <div class="min-h-screen bg-[#777] relative">
     <div class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
       <NavBar/>
       <!-- <HeroSection/> -->

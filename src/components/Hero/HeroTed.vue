@@ -18,11 +18,9 @@
                         <p className="font-semibold">Ask the chatbot anything about me</p>
                     </div> -->
                     <section className="mt-8 flex items-center gap-8">
-                        <a href="../../../docs/Resume_Elieser_Capillar.pdf" target="_blank">
-                            <button variant="outline">
-                                <span className="font-semibold text-white">Resume</span>
-                            </button>
-                        </a>
+                        <Button>
+                            <a href="/resume.pdf" target="_blank">Resume</a>
+                        </Button>
                         <Socials />
                     </section>
                 </div>
@@ -34,6 +32,6 @@
 
 <script setup lang="ts">
 import Socials from '../Socials.vue';
-
+import { Button } from '@/components/ui/button';
 
 </script>
