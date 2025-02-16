@@ -6,11 +6,11 @@
                                     class="w-48 h-48 max-w-[200px] rounded-full object-cover"
                                     >
                 <div className="flex flex-col">
-                    <h1 className="title text-5xl">Hi, I am Elieser Capillar,</h1>
-                    <p className="mt-4 font-light">
+                    <h1 className="text-5xl text-white">Hi, I am Elieser Capillar,</h1>
+                    <p className="mt-4 font-light text-white">
                         a <b><s>Game</s> Software Developer</b> currently based in <b>Mississauga, Ontario!</b>
                     </p>
-                    <p className="mt-2 font-light">
+                    <p className="mt-2 font-light text-white">
                         I like to develop full-stack, drink instant coffee and get coding
                         advice from my cat.
                     </p>
@@ -20,7 +20,7 @@
                     <section className="mt-8 flex items-center gap-8">
                         <a href="../../../docs/Resume_Elieser_Capillar.pdf" target="_blank">
                             <button variant="outline">
-                                <span className="font-semibold">Resume</span>
+                                <span className="font-semibold text-white">Resume</span>
                             </button>
                         </a>
                         <Socials />

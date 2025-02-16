@@ -12,7 +12,6 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
-  
   {
     "particles": {
       "number": {
@@ -23,7 +22,7 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#777"
+        "value": "#000000"
       },
       "shape": {
         "type": "circle",
@@ -51,7 +50,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 5,
+        "value": 3,
         "random": true,
         "anim": {
           "enable": false,
@@ -74,6 +73,7 @@ particlesJS('particles-js',
         "random": false,
         "straight": false,
         "out_mode": "out",
+        "bounce": false,
         "attract": {
           "enable": false,
           "rotateX": 600,
@@ -86,11 +86,11 @@ particlesJS('particles-js',
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
-          "enable": true,
-          "mode": "push"
+          "enable": false,
+          "mode": "repulse"
         },
         "resize": true
       },
@@ -109,7 +109,8 @@ particlesJS('particles-js',
           "speed": 3
         },
         "repulse": {
-          "distance": 200
+          "distance": 200,
+          "duration": 0.4
         },
         "push": {
           "particles_nb": 4
@@ -119,7 +120,6 @@ particlesJS('particles-js',
         }
       }
     },
-    "retina_detect": true,
+    "retina_detect": true
   }
-
 );
