@@ -1,6 +1,6 @@
 <template>
     <div class="bg-background mx-auto flex max-w-3xl flex-col px-8 font-sans antialiased">
-        <article className="mt-8 flex flex-col gap-16 pb-16">
+        <section className="mt-8 flex flex-col gap-16 pb-16">
             <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
                 <img src="../../assets/img/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" width="200" height="200" loading="lazy"
                                     class="w-48 h-48 max-w-[200px] rounded-full object-cover"
@@ -14,19 +14,16 @@
                         I like to develop full-stack, drink instant coffee and get coding
                         advice from my cat.
                     </p>
-                    <!-- <div className="mt-4 flex items-end gap-1">
-                        <p className="font-semibold">Ask the chatbot anything about me</p>
-                    </div> -->
-                    <section className="mt-8 flex items-center gap-8">
+                    <div className="mt-8 flex items-center gap-8">
                         <Button variant="outline">
                             <a href="/resume.pdf" download>Resume</a>
                             <Icon icon="lucide:file-down"></Icon>
                         </Button>
                         <Socials />
-                    </section>
+                    </div>
                 </div>
             </section>
-        </article>
+        </section>
     </div>
 
 </template>

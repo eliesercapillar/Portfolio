@@ -1,40 +1,49 @@
 {
-    "data": [
+  "data": [
+      {
+        "name": "C#",
+        "icon": "skill-icons:cs",
+        "iconBg": ""
+      },
+      {
+        "name": ".NET",
+        "icon": "skill-icons:dotnet",
+        "iconBg": "#F5F5F5"
+      },
       {
         "name": "Unity",
-        "description": "Game Engine",
-        "icon": "unity.svg",
+        "icon": "skill-icons:unity-dark",
         "iconBg": "#11282F"
       },
       {
-        "name": "Typescript",
-        "description": "JavaScript but better",
-        "icon": "typescript.svg",
-        "iconBg": ""
-      },
-      {
-        "name": "Sass",
-        "description": "CSS with superpowers",
-        "icon": "sass.svg",
-        "iconBg": ""
-      },
-      {
-        "name": "MUMPS",
-        "description": "Database language",
-        "icon": "m.png",
+        "name": "Vue.js",
+        "icon": "skill-icons:vuejs-dark",
         "iconBg": "#f4e067"
       },
       {
-        "name": "C#",
-        "description": "OOP language",
-        "icon": "csharp.svg",
+        "name": "Typescript",
+        "icon": "skill-icons:typescript",
         "iconBg": ""
       },
       {
-        "name": "Java",
-        "description": "OOP language",
-        "icon": "java.svg",
-        "iconBg": "#F5F5F5"
+        "name": "TailwindCSS",
+        "icon": "skill-icons:tailwindcss-dark",
+        "iconBg": ""
+      },
+      {
+        "name": "GitHub Actions",
+        "icon": "skill-icons:githubactions-dark",
+        "iconBg": ""
+      },
+      {
+        "name": "Docker",
+        "icon": "skill-icons:docker",
+        "iconBg": ""
+      },
+      {
+        "name": "Git",
+        "icon": "skill-icons:git",
+        "iconBg": ""
       }
     ]
   }
