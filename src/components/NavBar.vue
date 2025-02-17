@@ -29,6 +29,7 @@
                         {{ item.name }}
                     </a>
                 </li>
+                <ModeToggle/>
             </ul>
           </nav>
     </header>
@@ -36,6 +37,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import ModeToggle from './ModeToggle.vue';
 
 const Menu = ref([
     {name:'Home', href:''},

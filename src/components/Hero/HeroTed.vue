@@ -19,7 +19,7 @@
                     </div> -->
                     <section className="mt-8 flex items-center gap-8">
                         <Button>
-                            <a href="/resume.pdf" target="_blank">Resume</a>
+                            <a href="/resume.pdf" download>Resume</a>
                         </Button>
                         <Socials />
                     </section>
