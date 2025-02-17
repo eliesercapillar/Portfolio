@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import NavBar from './components/NavBar.vue';
-import HeroSection from './components/Hero/HeroSection.vue';
-import HeroEduardo from './components/Hero/HeroEduardo.vue';
-import HeroTed from './components/Hero/HeroTed.vue';
+import NavBarDefault from '@/components/NavBarDefault.vue';
+import NavBarAlt from '@/components/NavBarAlt.vue';
+import HeroSection from '@/components/Hero/HeroSection.vue';
+import HeroEduardo from '@/components/Hero/HeroEduardo.vue';
+import HeroTed from '@/components/Hero/HeroTed.vue';
 
 import Technologies from './components/Technologies.vue';
 </script>
@@ -10,7 +11,8 @@ import Technologies from './components/Technologies.vue';
 <template>
   <div class="min-h-screen bg-[#777] relative">
     <div class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
-      <NavBar/>
+      <NavBarDefault/>
+      <!-- <NavBarAlt/> -->
       <!-- <HeroSection/> -->
       <!-- <HeroEduardo/> -->
       <HeroTed/>

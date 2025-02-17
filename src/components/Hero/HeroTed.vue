@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto flex max-w-3xl flex-col px-8 font-sans antialiased">
+    <div class="bg-background mx-auto flex max-w-3xl flex-col px-8 font-sans antialiased">
         <article className="mt-8 flex flex-col gap-16 pb-16">
             <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
                 <img src="../../assets/img/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" width="200" height="200" loading="lazy"

@@ -2,15 +2,15 @@
     "data": [
       {
         "name": "Home",
-        "href": "#"
+        "href": "/"
       },
       {
         "name": "Projects",
-        "href": "#"
+        "href": "/projects"
       },
       {
         "name": "Contact",
-        "href": "#"
+        "href": "/contact"
       }
     ]
   }
