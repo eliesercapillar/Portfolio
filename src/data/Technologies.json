@@ -3,47 +3,51 @@
       {
         "name": "C#",
         "icon": "skill-icons:cs",
-        "iconBg": ""
+        "hasMultipleIcons": false
       },
       {
         "name": ".NET",
         "icon": "skill-icons:dotnet",
-        "iconBg": "#F5F5F5"
+        "hasMultipleIcons": false
       },
       {
         "name": "Unity",
-        "icon": "skill-icons:unity-dark",
-        "iconBg": "#11282F"
+        "icon_light": "skill-icons:unity-light",
+        "icon_dark": "skill-icons:unity-dark",
+        "hasMultipleIcons": true
       },
       {
         "name": "Vue.js",
-        "icon": "skill-icons:vuejs-dark",
-        "iconBg": "#f4e067"
+        "icon_light": "skill-icons:vuejs-light",
+        "icon_dark": "skill-icons:vuejs-dark",
+        "hasMultipleIcons": true
       },
       {
         "name": "Typescript",
         "icon": "skill-icons:typescript",
-        "iconBg": ""
+        "hasMultipleIcons": false
       },
       {
         "name": "TailwindCSS",
-        "icon": "skill-icons:tailwindcss-dark",
-        "iconBg": ""
+        "icon_light": "skill-icons:tailwindcss-light",
+        "icon_dark": "skill-icons:tailwindcss-dark",
+        "hasMultipleIcons": true
       },
       {
         "name": "GitHub Actions",
-        "icon": "skill-icons:githubactions-dark",
-        "iconBg": ""
+        "icon_light": "skill-icons:githubactions-light",
+        "icon_dark": "skill-icons:githubactions-dark",
+        "hasMultipleIcons": true
       },
       {
         "name": "Docker",
         "icon": "skill-icons:docker",
-        "iconBg": ""
+        "hasMultipleIcons": false
       },
       {
         "name": "Git",
         "icon": "skill-icons:git",
-        "iconBg": ""
+        "hasMultipleIcons": false
       }
     ]
   }
