@@ -1,11 +1,12 @@
 <template>
-    <div>
-        <LinkWithIcon v-for="t in Socials.data" :icon="t.icon" :key="t.name"></LinkWithIcon>
-    </div>
+    <section class="flex gap-6">
+        <a v-for="t in Socials.data" :key="t.name" :href="t.link" target="_blank" class="text-muted-foreground hover:text-foreground">
+                <Icon :icon="t.icon" class="size-5"></Icon>
+        </a>
+    </section>
 </template> 
 
 <script setup lang="ts">
-import LinkWithIcon from "./LinkWithIcon.vue";
-import Socials from "../data/Socials.json"
-
+import Socials from "@/data/Socials.json";
+import { Icon } from '@iconify/vue';
 </script>

@@ -38,6 +38,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import ModeToggle from './ModeToggle.vue';
+import Pages from '@/data/Pages.json'
 
 const Menu = ref([
     {name:'Home', href:''},

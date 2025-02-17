@@ -7,6 +7,7 @@ import { useColorMode } from '@vueuse/core'
 const mode = useColorMode()
 
 function toggleTheme() : void {
+    console.log(`current mode is ${mode.value}. Changing.`);
     mode.value = mode.value === 'dark' ? 'light' : 'dark'
 }
 

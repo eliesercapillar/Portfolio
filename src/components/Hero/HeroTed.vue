@@ -18,8 +18,9 @@
                         <p className="font-semibold">Ask the chatbot anything about me</p>
                     </div> -->
                     <section className="mt-8 flex items-center gap-8">
-                        <Button>
+                        <Button variant="outline">
                             <a href="/resume.pdf" download>Resume</a>
+                            <Icon icon="lucide:file-down"></Icon>
                         </Button>
                         <Socials />
                     </section>
@@ -33,5 +34,6 @@
 <script setup lang="ts">
 import Socials from '../Socials.vue';
 import { Button } from '@/components/ui/button';
+import { Icon } from '@iconify/vue';
 
 </script>
