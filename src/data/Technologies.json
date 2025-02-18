@@ -34,6 +34,11 @@
         "hasMultipleIcons": true
       },
       {
+        "name": "Git",
+        "icon": "skill-icons:git",
+        "hasMultipleIcons": false
+      },
+      {
         "name": "GitHub Actions",
         "icon_light": "skill-icons:githubactions-light",
         "icon_dark": "skill-icons:githubactions-dark",
@@ -42,11 +47,6 @@
       {
         "name": "Docker",
         "icon": "skill-icons:docker",
-        "hasMultipleIcons": false
-      },
-      {
-        "name": "Git",
-        "icon": "skill-icons:git",
         "hasMultipleIcons": false
       }
     ]

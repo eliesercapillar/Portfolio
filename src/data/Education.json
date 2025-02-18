@@ -1,0 +1,18 @@
+{
+    "data": [
+      {
+        "name": "University of Manitoba",
+        "href": "https://zenfri.ca/",
+        "title": "BS in Computer Science - Honours",
+        "logo": "/headshot-alt-500x500.jpg",
+        "start_date": "September 2017",
+        "end_date": "February 2024",
+        "description": [
+            "Specialization in Human-Computer Interactions.",
+            "",
+            ""
+        ],
+        "links": []
+      }
+    ]
+  }

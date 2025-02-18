@@ -1,10 +1,14 @@
 <template>
-    <div class="bg-background mx-auto flex max-w-3xl flex-col px-8 font-sans antialiased">
-        <section className="mt-8 flex flex-col gap-16 pb-16">
-            <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
-                <img src="../../assets/img/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" width="200" height="200" loading="lazy"
+    <div class="bg-background mx-auto flex max-w-3xl px-8 font-sans antialiased">
+        <section className="mt-8 flex flex-col">
+            <div className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+                <Avatar size="lg" shape="square">
+                    <AvatarImage src="/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" />
+                    <AvatarFallback>EC</AvatarFallback>
+                </Avatar>
+                <!-- <img src="/img/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" width="200" height="200" loading="lazy"
                                     class="w-48 h-48 max-w-[200px] rounded-full object-cover"
-                                    >
+                                    > -->
                 <div className="flex flex-col">
                     <h1 className="text-5xl text-white">Hi, I am Elieser Capillar,</h1>
                     <p className="mt-4 font-light text-white">
@@ -22,7 +26,7 @@
                         <Socials />
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
     </div>
 
@@ -30,6 +34,7 @@
 
 <script setup lang="ts">
 import Socials from '../Socials.vue';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button';
 import { Icon } from '@iconify/vue';
 

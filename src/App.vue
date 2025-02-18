@@ -5,7 +5,8 @@ import HeroSection from '@/components/Hero/HeroSection.vue';
 import HeroEduardo from '@/components/Hero/HeroEduardo.vue';
 import HeroTed from '@/components/Hero/HeroTed.vue';
 
-import Technologies from './components/Technologies.vue';
+import Technologies from '@/components/Technologies.vue';
+import Experience from '@/components/Experience.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import Technologies from './components/Technologies.vue';
       <!-- <HeroEduardo/> -->
       <HeroTed/>
       <Technologies/>
+      <Experience/>
     </div>
   </div>
 </template>
