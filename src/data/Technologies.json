@@ -34,6 +34,11 @@
         "hasMultipleIcons": true
       },
       {
+        "name": "MSSQL",
+        "icon": "devicon:microsoftsqlserver",
+        "hasMultipleIcons":false
+      },
+      {
         "name": "Git",
         "icon": "skill-icons:git",
         "hasMultipleIcons": false

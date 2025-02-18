@@ -7,6 +7,8 @@ import HeroTed from '@/components/Hero/HeroTed.vue';
 
 import Technologies from '@/components/Technologies.vue';
 import Experience from '@/components/Experience.vue';
+import FeaturedProjects from '@/components/FeaturedProjects.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -19,6 +21,8 @@ import Experience from '@/components/Experience.vue';
       <HeroTed/>
       <Technologies/>
       <Experience/>
+      <FeaturedProjects/>
+      <Footer/>
     </div>
   </div>
 </template>

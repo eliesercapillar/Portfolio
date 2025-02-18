@@ -3,15 +3,15 @@
         <section class="mt-8 flex flex-col w-full">
             <h2 class="text-3xl mb-4 text-foreground">Experience</h2>
             <Tabs default-value="experience" class="w-full rounded-md">
-                <TabsList class="w-full">
-                    <TabsTrigger value="experience">Experience</TabsTrigger>
-                    <TabsTrigger value="education">Education</TabsTrigger>
+                <TabsList class="w-full flex">
+                    <TabsTrigger value="experience" class="flex-1">Experience</TabsTrigger>
+                    <TabsTrigger value="education" class="flex-1">Education</TabsTrigger>
                 </TabsList>
                 <TabsContent value="experience">
-                    <Timeline :entries="Career.data" />
+                    <Timeline :entries="Career.data" key="career"/>
                 </TabsContent>
                 <TabsContent value="education">
-                    <Timeline :entries="Education.data" />
+                    <Timeline :entries="Education.data" key="education"/>
                 </TabsContent>
             </Tabs>
         </section>

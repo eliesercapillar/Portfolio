@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "name": "StudyBuddy",
+            "description": "Simple markdown portfolio made with Astro 🚀",
+            "href": "#",
+            "img": "headshot-alt-500x500.jpg",
+            "featured": true,
+            "tags": [
+                "Vue.js", "Typescript", "Python", "MSSQL", "Docker", "GitHub Actions"
+            ],
+            "links": [
+                {
+                    "name": "Source",
+                    "href": "https://github.com/eliesercapillar/StudyBuddy",
+                    "icon": "lucide:github"
+                }
+            ]
+        },
+        {
+            "name": "Sneaky Beaky Steve",
+            "description": "Simple markdown portfolio made with Astro 🚀",
+            "href": "#",
+            "img": "headshot-alt-500x500.jpg",
+            "featured": true,
+            "tags": ["Unity", "C#", ".NET"],
+            "links": [
+                {
+                    "name": "Play",
+                    "href": "https://eliesercapillar.itch.io/sneaky-beaky-steve",
+                    "icon": "lucide:gamepad-2"
+                },
+                {
+                    "name": "Source",
+                    "href": "https://github.com/eliesercapillar/Sneaky-Beaky-Steve",
+                    "icon": "lucide:github"
+                }
+            ]
+        }
+      ]
+    }

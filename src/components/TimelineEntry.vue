@@ -1,5 +1,5 @@
 <template>
-    <li className="relative ml-10 py-4">
+    <li class="relative ml-10 py-4">
         <a :href="job.href" target="_blank" class="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
             <Avatar class="size-12 border">
                 <AvatarImage :src="job.logo" :alt="`Logo of ${ job.name }`" class="bg-backgorund object-contain"/>
