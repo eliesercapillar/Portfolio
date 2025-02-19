@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto flex max-w-3xl px-8 font-sans antialiased w-full mb-10">
+    <div class="mx-auto flex max-w-3xl font-sans antialiased w-full mb-10">
         <section class="mt-8 flex flex-col w-full">
             <div class="mb-4 flex items-center justify-between">
                 <h2 class="text-3xl text-foreground inline">Featured Projects</h2>

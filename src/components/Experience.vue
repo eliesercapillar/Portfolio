@@ -1,8 +1,8 @@
 <template>
-    <div class="mx-auto flex max-w-3xl px-8 font-sans antialiased w-full">
+    <div class="mx-auto flex max-w-3xl font-sans antialiased w-full">
         <section class="mt-8 flex flex-col w-full">
             <h2 class="text-3xl mb-4 text-foreground">Experience</h2>
-            <Tabs default-value="experience" class="w-full rounded-md">
+            <Tabs default-value="experience" class="w-full rounded-md shadow-md">
                 <TabsList class="w-full flex">
                     <TabsTrigger value="experience" class="flex-1">Experience</TabsTrigger>
                     <TabsTrigger value="education" class="flex-1">Education</TabsTrigger>

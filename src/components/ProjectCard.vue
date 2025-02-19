@@ -1,5 +1,5 @@
 <template>
-    <Card class="flex flex-col gap-2 overflow-hidden rounded-lg shadow-lg border">
+    <Card class="flex flex-col gap-2 overflow-hidden rounded-lg shadow-md border">
         <div class="w-full h-[150px]">
             <a :href="project.href" target="_blank">
                 <img :src="project.img" alt="Project Image"
@@ -22,10 +22,11 @@
 
             <!-- Links -->
             <CardFooter class="p-0 mt-3 flex flex-wrap gap-1">
-                <Button v-for="link in project.links" :key="link.name" variant="secondary" size="sm"
-                    class="flex items-center gap-2 ">
-                    <a :href="link.href" target="_blank" class="text-sm">{{ link.name }}</a>
-                    <Icon :icon="link.icon" class="size-4" />
+                <Button v-for="link in project.links" :key="link.name" variant="secondary" size="sm">
+                    <a :href="link.href" target="_blank" class="flex items-center gap-2">
+                        <p class="text-sm">{{ link.name }}</p>
+                        <Icon :icon="link.icon" class="size-4 inline" />
+                    </a>
                 </Button>
             </CardFooter>
         </div>
