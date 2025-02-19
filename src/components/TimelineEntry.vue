@@ -1,10 +1,13 @@
 <template>
     <li class="relative ml-10 py-4">
-        <a :href="job.href" target="_blank" class="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
+        <a :href="job.href" target="_blank" class="absolute -left-16 top-4 flex items-center justify-center rounded-full">
             <Avatar class="size-12 border">
-                <AvatarImage :src="job.logo" :alt="`Logo of ${ job.name }`" class="bg-backgorund object-contain"/>
+                <AvatarImage :src="job.logo" :alt="`Logo of ${ job.name }`" class="bg-background object-contain"/>
                 <AvatarFallback>{{ job.name[0] }}</AvatarFallback> 
             </Avatar>
+            <div class="absolute inset-0 bg-gray-900/50 flex items-center justify-center rounded-full opacity-0 hover:opacity-100 transition-opacity">
+                <Icon icon="lucide:external-link" class="size-6 text-white" />
+            </div>
         </a>
         <div class="flex flex-1 flex-col justify-start gap-1">
             <time v-if="job.start_date" class="text-xs text-muted-foreground">
@@ -33,6 +36,7 @@
 
 <script setup lang="ts">
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Icon } from '@iconify/vue'
 
 defineProps<{
     job: {
