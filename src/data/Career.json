@@ -4,13 +4,12 @@
         "name": "ZenFri Inc.",
         "href": "https://zenfri.ca/",
         "title": "Software Developer",
-        "logo": "/headshot-alt-500x500.jpg",
+        "logo": "/zenfri.jpg",
         "start_date": "March 2024",
         "end_date": "October 2024",
         "description": [
-            "",
-            "",
-            ""
+            "Utilized OpenAI to create a AI tour guide with personalized, context-aware replies using Unity, C# and .NET.",
+            "Architected and developed a robust backend infrastructure and RESTful API with ASP.NET MVC, MSSQL, and Docker."
         ],
         "links": []
       },
@@ -18,13 +17,12 @@
         "name": "Ogoki Learning Inc.",
         "href": "https://www.ogokilearning.com/",
         "title": "Unity Developer",
-        "logo": "/headshot-alt-500x500.jpg",
+        "logo": "/ogoki.jpg",
         "start_date": "September 2022",
         "end_date": "March 2024",
         "description": [
-            "",
-            "",
-            ""
+            "Led the development of five mobile indigenous language apps from ideation to production using Unity, C# and .NET.",
+            "Refactored and streamlined legacy projects, improving development efficiency when clients requested more features."
         ],
         "links": []
       }
