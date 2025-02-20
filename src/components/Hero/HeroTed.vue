@@ -22,8 +22,9 @@
                         <Socials />
                     </div>
                 </div>
-                <Avatar size="xlg" shape="square">
-                    <AvatarImage src="/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" />
+                <Avatar size="xlg" shape="circle">
+                    <AvatarImage v-if="!pabloPictureOn" src="/headshot-main-1000x1000.jpg" alt="Photo of Elieser" />
+                    <AvatarImage v-else src="/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" />
                     <AvatarFallback>EC</AvatarFallback>
                 </Avatar>
             </div>
@@ -37,9 +38,13 @@ import Socials from '../Socials.vue';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button';
 import { Icon } from '@iconify/vue';
+import { ref } from 'vue';
+
+let pabloPictureOn = ref(false);
 
 function showPablo()
 {
-    console.log("Showing Pabby :3")
+    pabloPictureOn.value = !pabloPictureOn.value;
+    console.log(`Showing Pabby :3 \n${pabloPictureOn}`)
 }
 </script>
