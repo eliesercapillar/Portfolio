@@ -22,12 +22,12 @@
 
             <!-- Links -->
             <CardFooter class="p-0 mt-3 flex flex-wrap gap-1">
-                <Button v-for="link in project.links" :key="link.name" variant="secondary" size="sm">
-                    <a :href="link.href" target="_blank" class="flex items-center gap-2">
+                <a v-for="link in project.links" :key="link.name" :href="link.href" target="_blank">
+                    <Button variant="secondary" size="sm" class="flex items-center gap-2">
                         <p class="text-sm">{{ link.name }}</p>
                         <Icon :icon="link.icon" class="size-4 inline" />
-                    </a>
-                </Button>
+                    </Button>
+                </a>
             </CardFooter>
         </div>
     </Card>

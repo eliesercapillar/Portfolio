@@ -15,10 +15,12 @@
                         <span @click="showPablo" class="hover:cursor-pointer"><b>Pablo 🐶</b></span>.
                     </p>
                     <div class="mt-8 flex items-center gap-8">
-                        <Button variant="outline" class="shadow-md">
-                            <a href="/resume.pdf" download>Resume</a>
-                            <Icon icon="lucide:file-down"/>
-                        </Button>
+                        <a href="/resume.pdf" download>
+                            <Button variant="outline" class="shadow-md flex items-center gap-2">
+                                <p class="text-sm">Resume</p>
+                                <Icon icon="lucide:file-down"/>
+                            </Button>
+                        </a>
                         <Socials />
                     </div>
                 </div>
@@ -34,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import Socials from '../Socials.vue';
+import Socials from '@/components/Socials.vue';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button';
 import { Icon } from '@iconify/vue';
