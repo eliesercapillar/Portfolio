@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-background mx-auto flex max-w-3xl font-sans antialiased w-full">
+    <div class="mx-auto flex max-w-3xl font-sans antialiased w-full">
         <section class="mt-8 flex flex-col w-full">
             <h2 class="text-3xl mb-4 text-foreground">Technologies</h2>
             <div class="grid grid-cols-4 gap-1 md:grid-cols-5">
                 <Card v-for="t in Tech.data" :key="t.name" 
-                    class="border text-card-foreground overflow-hidden rounded-md shadow-md">
+                    class="border overflow-hidden rounded-md">
                     <CardContent class="flex flex-col aspect-square select-none items-center justify-center p-2 gap-2">
                         <Icon :icon="getIcon(t).value" class="size-12"></Icon>
                         <CardTitle class="text-xs md:text-sm text-center">{{ t.name }}</CardTitle>

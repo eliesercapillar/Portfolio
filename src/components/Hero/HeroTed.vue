@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-background mx-auto flex max-w-3xl font-sans antialiased border-t-2">
+    <div class="mx-auto flex max-w-3xl font-sans antialiased">
         <section class="mt-8 flex flex-col">
             <div class="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
                 <div class="flex flex-col">
@@ -45,6 +45,5 @@ let pabloPictureOn = ref(false);
 function showPablo()
 {
     pabloPictureOn.value = !pabloPictureOn.value;
-    console.log(`Showing Pabby :3 \n${pabloPictureOn}`)
 }
 </script>

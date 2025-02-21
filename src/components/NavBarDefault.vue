@@ -1,5 +1,5 @@
 <template>
-    <header class="sticky top-0 z-50 bg-background/75 py-6 backdrop-blur-sm">
+    <header class="top-0 z-50 py-6">
         <nav class="flex items-center justify-between">
             <ul class="flex gap-4 sm:gap-8">
                 <li v-for="page in Pages.data" :key="page.name" class="text-muted-foreground hover:text-foreground">

@@ -9,10 +9,12 @@ import Technologies from '@/components/Technologies.vue';
 import Experience from '@/components/Experience.vue';
 import FeaturedProjects from '@/components/FeaturedProjects.vue';
 import Footer from '@/components/Footer.vue';
+import RippleCircleBG from '@/components/RippleCircleBG.vue'
 </script>
 
 <template>
-  <div class="min-h-screen bg-background relative">
+  <div class="min-h-screen relative">
+    <RippleCircleBG/>
     <div class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
       <NavBarDefault/>
       <!-- <NavBarAlt/> -->
