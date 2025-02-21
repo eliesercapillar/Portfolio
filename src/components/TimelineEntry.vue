@@ -10,15 +10,15 @@
             </div>
         </a>
         <div class="flex flex-1 flex-col justify-start gap-1">
-            <time v-if="job.start_date" class="text-xs text-muted-foreground">
+            <time v-if="job.start_date" class="font-supreme font-light text-xs text-muted-foreground">
                 <span>{{ job.start_date }}</span>
                 <span> - </span>
                 <span>{{ job.end_date ? job.end_date : "Present" }}</span>
             </time>
-            <h2 class="font-semibold leading-none">{{ job.name }}</h2>
-            <p v-if="job.title" class="text-sm text-muted-foreground">{{ job.title }}</p>
+            <h2 class="font-supreme font-semibold leading-none">{{ job.name }}</h2>
+            <p v-if="job.title" class="font-supreme font-normal text-sm text-muted-foreground italic">{{ job.title }}</p>
             <ul v-if="job.description.length > 0" class="ml-4 list-outside list-disc">
-                <li v-for="(desc, i) in job.description" :key="i" class="prose pr-8 text-sm dark:prose-invert">
+                <li v-for="(desc, i) in job.description" :key="i" class="pr-8 text-sm font-supreme font-normal leading-relaxed">
                     {{ desc }}
                 </li>
             </ul>

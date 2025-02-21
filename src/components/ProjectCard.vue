@@ -9,13 +9,13 @@
         <div class="flex flex-col justify-between p-4 w-full h-full">
             <!-- Header -->
             <CardHeader class="p-0">
-                <CardTitle class="text-lg font-semibold text-foreground">{{ project.name }}</CardTitle>
-                <CardDescription class="text-muted-foreground text-xs">{{ project.description }}</CardDescription>
+                <CardTitle class="text-lg font-supreme font-semibold text-foreground">{{ project.name }}</CardTitle>
+                <CardDescription class="text-muted-foreground font-supreme font-medium text-xs">{{ project.description }}</CardDescription>
             </CardHeader>
 
             <!-- Tags -->
             <CardContent class="p-0 mt-2 flex flex-wrap gap-1">
-                <Badge v-for="tag in project.tags" :key="tag" class="text-xs px-2 py-1 bg-primary/10" variant="secondary">
+                <Badge v-for="tag in project.tags" :key="tag" class="text-xs px-2 py-1 bg-primary/15 font-supreme font-medium" variant="secondary">
                     {{ tag }}
                 </Badge>
             </CardContent>
@@ -24,7 +24,7 @@
             <CardFooter class="p-0 mt-3 flex flex-wrap gap-1">
                 <a v-for="link in project.links" :key="link.name" :href="link.href" target="_blank">
                     <Button variant="secondary" size="sm" class="flex items-center gap-2">
-                        <p class="text-sm">{{ link.name }}</p>
+                        <p class="text-sm font-supreme font-bold">{{ link.name }}</p>
                         <Icon :icon="link.icon" class="size-4 inline" />
                     </Button>
                 </a>
