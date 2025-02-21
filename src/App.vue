@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import NavBarDefault from '@/components/NavBarDefault.vue';
-import NavBarAlt from '@/components/NavBarAlt.vue';
-import HeroSection from '@/components/Hero/HeroSection.vue';
-import HeroEduardo from '@/components/Hero/HeroEduardo.vue';
 import HeroTed from '@/components/Hero/HeroTed.vue';
 
 import Technologies from '@/components/Technologies.vue';
