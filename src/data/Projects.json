@@ -2,13 +2,12 @@
     "data": [
         {
             "name": "StudyBuddy",
-            "description": "Simple markdown portfolio made with Astro 🚀",
-            "href": "#",
-            "img": "headshot-alt-500x500.jpg",
+            "description": "A feature-rich gamified study tracker, with a buddy collection and leveling system.",
+            "img": "studybuddy.jpg",
+            "type": "school",
+            "organization": "University of Manitoba",
             "featured": true,
-            "tags": [
-                "Vue.js", "Typescript", "Python", "MSSQL", "Docker", "GitHub Actions"
-            ],
+            "tags": ["Vue.js", "Typescript", "Python", "MSSQL", "Docker", "GitHub Actions"],
             "links": [
                 {
                     "name": "Source",
@@ -19,9 +18,10 @@
         },
         {
             "name": "Sneaky Beaky Steve",
-            "description": "Simple markdown portfolio made with Astro 🚀",
-            "href": "#",
-            "img": "headshot-alt-500x500.jpg",
+            "description": "A 2D top-down stealth game, with task-directed AI and Raycast LOS detection.",
+            "img": "sbs.jpg",
+            "type": "personal",
+            "organization": "",
             "featured": true,
             "tags": ["Unity", "C#", ".NET"],
             "links": [
@@ -34,6 +34,111 @@
                     "name": "Source",
                     "href": "https://github.com/eliesercapillar/Sneaky-Beaky-Steve",
                     "icon": "lucide:github"
+                }
+            ]
+        },
+        {
+            "name": "Ilhe Qwal Hul'q'umi'num'",
+            "description": "A Hul'q'umi'num' language learning app— the traditional language of the Coast Salish people.",
+            "img": "ilhe_qwal.jpg",
+            "type": "work",
+            "organization": "Ogoki Learning Inc.",
+            "featured": false,
+            "tags": ["Unity", "C#", ".NET"],
+            "links": [
+                {
+                    "name": "Android",
+                    "href": "https://play.google.com/store/apps/details?id=com.Ogoki.Kwumut",
+                    "icon": "tabler:brand-android"
+                },
+                {
+                    "name": "iOS",
+                    "href": "https://apps.apple.com/ca/app/ilhe-qwal/id6447658350",
+                    "icon": "tabler:brand-apple"
+                }
+            ]
+        },
+        {
+            "name": "Curve Lake",
+            "description": "An Objibwe language learning app— tailored specifically for the Curve Lake First Nation community.",
+            "img": "curve_lake.jpg",
+            "type": "work",
+            "organization": "Ogoki Learning Inc.",
+            "featured": false,
+            "tags": ["Unity", "C#", ".NET"],
+            "links": [
+                {
+                    "name": "Android",
+                    "href": "https://play.google.com/store/apps/details?id=com.ogoki.curvelake",
+                    "icon": "tabler:brand-android"
+                },
+                {
+                    "name": "iOS",
+                    "href": "https://apps.apple.com/ca/app/curve-lake-ojibwe/id6476942595",
+                    "icon": "tabler:brand-apple"
+                }
+            ]
+        },
+        {
+            "name": "Shakopee",
+            "description": "A Dakota language learning app for the Shakopee Mdewakanton Sioux community.",
+            "img": "shakopee.jpg",
+            "type": "work",
+            "organization": "Ogoki Learning Inc.",
+            "featured": false,
+            "tags": ["Unity", "C#", ".NET"],
+            "links": [
+                {
+                    "name": "Android",
+                    "href": "https://play.google.com/store/apps/details?id=com.OgokiLearning.Shakopee2",
+                    "icon": "tabler:brand-android"
+                },
+                {
+                    "name": "iOS",
+                    "href": "https://apps.apple.com/ca/app/shakopee/id6443592014",
+                    "icon": "tabler:brand-apple"
+                }
+            ]
+        },
+        {
+            "name": "Whitecap Dakota",
+            "description": "A Dakota language learning app for the Whitecap Dakota First Nation community.",
+            "img": "whitecap.jpg",
+            "type": "work",
+            "organization": "Ogoki Learning Inc.",
+            "featured": false,
+            "tags": ["Unity", "C#", ".NET"],
+            "links": [
+                {
+                    "name": "Android",
+                    "href": "https://play.google.com/store/apps/details?id=com.ogoki.whitecap",
+                    "icon": "tabler:brand-android"
+                },
+                {
+                    "name": "iOS",
+                    "href": "https://apps.apple.com/ca/app/whitecap-dakota-language/id6450760571",
+                    "icon": "tabler:brand-apple"
+                }
+            ]
+        },
+        {
+            "name": "Pikangikum",
+            "description": "An Objibwe language learning app for the Pikangikum First Nation community.",
+            "img": "pikangikum.jpg",
+            "type": "work",
+            "organization": "Ogoki Learning Inc.",
+            "featured": false,
+            "tags": ["Unity", "C#", ".NET"],
+            "links": [
+                {
+                    "name": "Android",
+                    "href": "https://play.google.com/store/apps/details?id=com.ogokilearning.pikangikum2",
+                    "icon": "tabler:brand-android"
+                },
+                {
+                    "name": "iOS",
+                    "href": "https://apps.apple.com/us/app/pikangikum/id6443591314",
+                    "icon": "tabler:brand-apple"
                 }
             ]
         }

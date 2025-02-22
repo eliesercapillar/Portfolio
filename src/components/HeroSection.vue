@@ -2,11 +2,6 @@
     <div class="mx-auto flex max-w-3xl font-sans antialiased">
         <section class="mt-8 flex flex-col">
             <div class="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
-                <Avatar size="xlg" shape="circle">
-                    <AvatarImage v-if="!pabloPictureOn" src="/headshot-main-1000x1000.jpg" alt="Photo of Elieser" />
-                    <AvatarImage v-else src="/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" />
-                    <AvatarFallback>EC</AvatarFallback>
-                </Avatar>
                 <div class="flex flex-col">
                     <h1 class="font-spaceGrotesk font-semibold text-5xl text-foreground">Elieser Capillar</h1>
                     <h2 class="font-supreme font-normal pt-2 text-2xl text-foreground">Software Developer</h2>
@@ -29,6 +24,11 @@
                         <Socials />
                     </div>
                 </div>
+                <Avatar size="xlg" shape="circle">
+                    <AvatarImage v-if="!pabloPictureOn" src="/headshot-main-1000x1000.jpg" alt="Photo of Elieser" />
+                    <AvatarImage v-else src="/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" />
+                    <AvatarFallback>EC</AvatarFallback>
+                </Avatar>
             </div>
         </section>
     </div>

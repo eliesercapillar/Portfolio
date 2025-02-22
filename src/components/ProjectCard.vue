@@ -1,10 +1,12 @@
 <template>
     <Card class="flex flex-col gap-2 overflow-hidden rounded-lg shadow-md border">
         <div class="w-full h-[150px]">
-            <a :href="project.href" target="_blank">
+            <!-- <a :href="project.href" target="_blank">
                 <img :src="project.img" alt="Project Image"
                     class="w-full h-40 object-cover object-top transition-transform duration-300 hover:scale-105" />
-            </a>
+            </a> -->
+            <img :src="project.img" alt="Project Image"
+                    class="w-full h-40 object-cover object-top transition-transform duration-300 hover:scale-105" />
         </div>
         <div class="flex flex-col justify-between p-4 w-full h-full">
             <!-- Header -->
