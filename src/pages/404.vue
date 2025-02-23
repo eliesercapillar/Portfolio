@@ -1,10 +1,23 @@
 <template>
-    <div class="min-h-screen relative">
+    <div class="min-h-screen">
       <RippleCircleBG/>
-      <div class="mx-auto flex min-h-screen max-w-3xl flex-col px-8">
+      <div class="mx-auto min-h-screen max-w-3xl px-8 grid grid-rows-[auto_1fr_auto]">
         <NavBar :activeIndex="-1"/>
+        <div class="p-16 flex flex-col justify-center gap-10">
+          <div class="flex items-center justify-center gap-4">
+            <p class="text-3xl md:text-7xl opacity-60">404</p>
+            <span class="text-3xl md:text-7xl opacity-60"> | </span>
+            <p class="text-3xl md:text-7xl opacity-60">¯\_(ツ)_/¯</p>
+          </div>
+          <div class="flex items-center justify-center">
+            <a href="#" class="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                <Icon icon="lucide:arrow-left" class="size-7"/>
+                <p class="font-light text-lg md:text-3xl">Back to Home</p>
+            </a>
+          </div>
+        </div>
+        <Footer/>
       </div>
-      <Footer/>
     </div>
 
     <!-- <div class="flex h-screen flex-col items-center justify-center text-center">
@@ -18,5 +31,6 @@
 import RippleCircleBG from '@/components/RippleCircleBG.vue'
 import NavBar         from '@/components/NavBar.vue';
 import Footer         from '@/components/Footer.vue';
+import { Icon } from '@iconify/vue';
 </script>
   

@@ -3,9 +3,9 @@
         <section class="mt-8 flex flex-col">
             <div class="mb-4 flex items-center justify-between">
                 <h2 class="text-3xl font-medium">Featured Projects</h2>
-                <a href="#" class="flex items-center gap-2 text-muted-foreground hover:text-foreground">
+                <a href="/projects" class="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                     <p class="font-light text-md">View More</p>
-                    <Icon icon="lucide:arrow-right" class="text-lg"/>
+                    <Icon icon="lucide:arrow-right" class="size-5"/>
                 </a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
