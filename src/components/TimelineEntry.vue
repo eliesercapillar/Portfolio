@@ -10,20 +10,20 @@
             </div>
         </a>
         <div class="flex flex-1 flex-col justify-start gap-1">
-            <time v-if="job.start_date" class="font-supreme font-light text-xs text-muted-foreground">
+            <time v-if="job.start_date" class="font-light text-xs text-muted-foreground">
                 <span>{{ job.start_date }}</span>
                 <span> - </span>
                 <span>{{ job.end_date ? job.end_date : "Present" }}</span>
             </time>
-            <h2 class="font-supreme font-semibold leading-none">{{ job.name }}</h2>
-            <p v-if="job.title" class="font-supreme font-normal text-sm text-muted-foreground italic">{{ job.title }}</p>
+            <h2 class="font-semibold leading-none">{{ job.name }}</h2>
+            <p v-if="job.title" class="font-normal text-sm text-muted-foreground italic">{{ job.title }}</p>
             <ul v-if="job.description.length > 0" class="ml-4 list-outside list-disc">
-                <li v-for="(desc, i) in job.description" :key="i" class="pr-8 text-sm font-supreme font-normal leading-relaxed">
+                <li v-for="(desc, i) in job.description" :key="i" class="pr-8 text-sm font-normal leading-relaxed">
                     {{ desc }}
                 </li>
             </ul>
-            </div>
-            <div v-if="job.links.length > 0" class="mt-2 flex flex-row flex-wrap items-start gap-2">
+        </div>
+        <div v-if="job.links.length > 0" class="mt-2 flex flex-row flex-wrap items-start gap-2">
             <!-- <a v-for="(link, idx) in job.links" :href="link.href" :key="idx" class="flex gap-2">
                 <Badge :title="link.name">
                     <Icon :name="link.icon" aria-hidden="true" class="size-3" />

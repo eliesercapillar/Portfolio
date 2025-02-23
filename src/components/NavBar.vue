@@ -1,10 +1,13 @@
 <template>
-    <header class="top-0 z-50 py-6 border-b-2">
+    <header class="z-50 py-6 border-b-2">
         <nav class="flex items-center justify-between">
             <ul class="flex gap-4 sm:gap-8">
-                <li v-for="page in Pages.data" :key="page.name" class="text-muted-foreground hover:text-foreground font-supreme font-normal">
-                    <a :href="page.href">{{ page.name }}</a>
-                <Link href={nav.href}>{nav.name}</Link>
+                <li v-for="(page, index) in Pages.data" 
+                :key="page.name" 
+                :class="['font-supreme font-normal', 
+                index === activeIndex ? 'text-foreground cursor-pointer' : 'text-muted-foreground hover:opacity-50']">
+                    <a v-if="index !== activeIndex" :href="page.href">{{ page.name }}</a>
+                    <span v-else>{{ page.name }}</span>
                 </li>
             </ul>
             <div>
@@ -17,4 +20,8 @@
 <script setup lang="ts">
 import ModeToggle from './ModeToggle.vue';
 import Pages from '@/data/Pages.json'
+
+defineProps<{
+    activeIndex?: number; // Optional prop (defaults to -1)
+}>();
 </script>

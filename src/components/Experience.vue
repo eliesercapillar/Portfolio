@@ -1,11 +1,11 @@
 <template>
-    <div class="mx-auto flex max-w-3xl antialiased w-full">
+    <div class="mx-auto max-w-3xl w-full">
         <section class="mt-8 flex flex-col w-full">
-            <h2 class="text-3xl mb-4 text-foreground font-supreme font-medium">Experience</h2>
-            <Tabs default-value="work" class="w-full rounded-md">
-                <TabsList class="w-full flex shadow-md">
-                    <TabsTrigger value="work" class="flex-1 font-supreme font-normal" >Professional</TabsTrigger>
-                    <TabsTrigger value="school" class="flex-1 font-supreme font-normal">Education</TabsTrigger>
+            <h2 class="text-3xl mb-4 text-foreground font-medium">Experience</h2>
+            <Tabs default-value="work">
+                <TabsList class="w-full shadow-md">
+                    <TabsTrigger value="work" class="flex-1 font-normal" >Professional</TabsTrigger>
+                    <TabsTrigger value="school" class="flex-1 font-normal">Education</TabsTrigger>
                 </TabsList>
                 <TabsContent value="work">
                     <Timeline :entries="Career.data" key="career"/>

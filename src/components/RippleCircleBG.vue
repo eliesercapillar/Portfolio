@@ -42,7 +42,7 @@ width: 50vw;
 height: 50vw;
 background: #5e5d5d1a;
 border-radius: 50%;
-transform: translate(-50%, -50%) scale(0.75);
+transform: translate(-50%, -50%) scale(0.50);
 animation: ripple 20s infinite ease-in-out;
 z-index: -1;
 }
@@ -59,7 +59,7 @@ animation-delay: 4s;
 /* Keyframes for the ripple effect */
 @keyframes ripple {
 0% {
-    transform: translate(-50%, -50%) scale(0.75);
+    transform: translate(-50%, -50%) scale(0.50);
     opacity: 1;
 }
 100% {

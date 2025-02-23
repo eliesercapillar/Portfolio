@@ -1,8 +1,8 @@
 <template>
-    <div class="min-h-screen relative">
+    <div class="min-h-screen">
       <RippleCircleBG/>
-      <div class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
-        <NavBarDefault/>
+      <div class="mx-auto max-w-3xl px-8 flex flex-col">
+        <NavBar :activeIndex="0"/>
         <HeroSection/>
         <Technologies/>
         <Experience/>
@@ -14,7 +14,7 @@
   
 <script setup lang="ts">
 import RippleCircleBG   from '@/components/RippleCircleBG.vue'
-import NavBarDefault    from '@/components/NavBar.vue';
+import NavBar           from '@/components/NavBar.vue';
 import HeroSection      from '@/components/HeroSection.vue';
 import Technologies     from '@/components/Technologies.vue';
 import Experience       from '@/components/Experience.vue';
