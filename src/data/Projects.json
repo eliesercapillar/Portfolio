@@ -1,6 +1,45 @@
 {
     "data": [
         {
+            "name": "Personal Portfolio",
+            "description": "My personal portfolio where I summarize and showcase my work.",
+            "year": "2025",
+            "img": "portfolio.jpg",
+            "type": "personal",
+            "organization": "",
+            "featured": false,
+            "tags": ["Vue.js", "Typescript", "TailwindCSS"],
+            "links": [
+                {
+                    "name": "Source",
+                    "href": "https://github.com/eliesercapillar/Portfolio",
+                    "icon": "lucide:github"
+                }
+            ]
+        },
+        {
+            "name": "Sneaky Beaky Steve",
+            "description": "A 2D top-down stealth game, with task-directed AI and Raycast LOS detection.",
+            "year": "2024",
+            "img": "sbs.jpg",
+            "type": "personal",
+            "organization": "",
+            "featured": true,
+            "tags": ["Unity", "C#", ".NET"],
+            "links": [
+                {
+                    "name": "Play",
+                    "href": "https://eliesercapillar.itch.io/sneaky-beaky-steve",
+                    "icon": "lucide:gamepad-2"
+                },
+                {
+                    "name": "Source",
+                    "href": "https://github.com/eliesercapillar/Sneaky-Beaky-Steve",
+                    "icon": "lucide:github"
+                }
+            ]
+        },
+        {
             "name": "StudyBuddy",
             "description": "A feature-rich gamified study tracker, with a buddy collection and leveling system.",
             "year": "2023",
@@ -35,13 +74,31 @@
             ]
         },
         {
+            "name": "Space Organizer",
+            "description": "A medium fidelity prototype for organizing spaces for mobile phones.",
+            "year": "2023",
+            "img": "space_organizer.jpg",
+            "type": "school",
+            "organization": "University of Manitoba",
+            "featured": false,
+            "tags": ["Unity", "C#", ".NET", "Paper Prototypes", "Storyboards"],
+            "links": [
+
+                {
+                    "name": "Source",
+                    "href": "https://github.com/eliesercapillar/Space-Organizer",
+                    "icon": "lucide:github"
+                }
+            ]
+        },
+        {
             "name": "Game Hub",
             "description": "A high fidelity vertical prototype of an item browser for games (like Steam), set in a game world.",
             "year": "2022",
             "img": "game_hub.jpg",
             "type": "school",
             "organization": "University of Manitoba",
-            "featured": true,
+            "featured": false,
             "tags": ["Unity", "C#", ".NET", "Paper Prototypes", "Storyboards"],
             "links": [
                 {
@@ -57,64 +114,10 @@
             ]
         },
         {
-            "name": "Space Organizer",
-            "description": "A medium fidelity prototype of a Space Organizer (like Sims) for mobile phones.",
-            "year": "2023",
-            "img": "space_organizer.jpg",
-            "type": "school",
-            "organization": "University of Manitoba",
-            "featured": true,
-            "tags": ["Unity", "C#", ".NET", "Paper Prototypes", "Storyboards"],
-            "links": [
-
-                {
-                    "name": "Source",
-                    "href": "https://github.com/eliesercapillar/Space-Organizer",
-                    "icon": "lucide:github"
-                }
-            ]
-        },
-        {
-            "name": "Personal Portfolio",
-            "description": "My personal portfolio where I summarize and showcase my work.",
-            "img": "portfolio.jpg",
-            "type": "personal",
-            "organization": "",
-            "featured": true,
-            "tags": ["Vue.js", "Typescript", "TailwindCSS"],
-            "links": [
-                {
-                    "name": "Source",
-                    "href": "https://github.com/eliesercapillar/Portfolio",
-                    "icon": "lucide:github"
-                }
-            ]
-        },
-        {
-            "name": "Sneaky Beaky Steve",
-            "description": "A 2D top-down stealth game, with task-directed AI and Raycast LOS detection.",
-            "img": "sbs.jpg",
-            "type": "personal",
-            "organization": "",
-            "featured": true,
-            "tags": ["Unity", "C#", ".NET"],
-            "links": [
-                {
-                    "name": "Play",
-                    "href": "https://eliesercapillar.itch.io/sneaky-beaky-steve",
-                    "icon": "lucide:gamepad-2"
-                },
-                {
-                    "name": "Source",
-                    "href": "https://github.com/eliesercapillar/Sneaky-Beaky-Steve",
-                    "icon": "lucide:github"
-                }
-            ]
-        },
-        {
             "name": "Artefacta",
             "description": "A prototype for a personalized AI museum tour guide, along with a set of AI-powered, feature rich tools, to help museum curators manage galleries.",
-            "img": "sbs.jpg",
+            "year": "2024",
+            "img": "artefacta.jpg",
             "type": "work",
             "organization": "Zenfri Inc.",
             "featured": true,
@@ -130,10 +133,11 @@
         {
             "name": "Ilhe Qwal Hul'q'umi'num'",
             "description": "A Hul'q'umi'num' language learning app— the traditional language of the Coast Salish people.",
+            "year": "2024",
             "img": "ilhe_qwal.jpg",
             "type": "work",
             "organization": "Ogoki Learning Inc.",
-            "featured": true,
+            "featured": false,
             "tags": ["Unity", "C#", ".NET"],
             "links": [
                 {
@@ -151,10 +155,11 @@
         {
             "name": "Curve Lake",
             "description": "An Objibwe language learning app— tailored specifically for the Curve Lake First Nation community.",
+            "year": "2023",
             "img": "curve_lake.jpg",
             "type": "work",
             "organization": "Ogoki Learning Inc.",
-            "featured": true,
+            "featured": false,
             "tags": ["Unity", "C#", ".NET"],
             "links": [
                 {
@@ -172,10 +177,11 @@
         {
             "name": "Shakopee",
             "description": "A Dakota language learning app for the Shakopee Mdewakanton Sioux community.",
+            "year": "2023",
             "img": "shakopee.jpg",
             "type": "work",
             "organization": "Ogoki Learning Inc.",
-            "featured": true,
+            "featured": false,
             "tags": ["Unity", "C#", ".NET"],
             "links": [
                 {
@@ -193,10 +199,11 @@
         {
             "name": "Whitecap Dakota",
             "description": "A Dakota language learning app for the Whitecap Dakota First Nation community.",
+            "year": "2023",
             "img": "whitecap.jpg",
             "type": "work",
             "organization": "Ogoki Learning Inc.",
-            "featured": true,
+            "featured": false,
             "tags": ["Unity", "C#", ".NET"],
             "links": [
                 {
@@ -214,10 +221,11 @@
         {
             "name": "Pikangikum",
             "description": "An Objibwe language learning app for the Pikangikum First Nation community.",
+            "year": "2022",
             "img": "pikangikum.jpg",
             "type": "work",
             "organization": "Ogoki Learning Inc.",
-            "featured": true,
+            "featured": false,
             "tags": ["Unity", "C#", ".NET"],
             "links": [
                 {

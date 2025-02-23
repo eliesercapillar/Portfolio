@@ -1,11 +1,11 @@
 <template>
-    <div class="min-h-screen relative">
+    <div class="min-h-screen relative grid grid-rows-[auto_1fr_auto]">
       <RippleCircleBG/>
       <div class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
         <NavBarDefault/>
         <AllProjects/>
-        <Footer/>
       </div>
+      <Footer/>
     </div>
 </template>
   
@@ -13,10 +13,6 @@
 import RippleCircleBG   from '@/components/RippleCircleBG.vue'
 import NavBarDefault    from '@/components/NavBarDefault.vue';
 import AllProjects      from '@/components/AllProjects.vue';
-import HeroSection      from '@/components/HeroSection.vue';
-import Technologies     from '@/components/Technologies.vue';
-import Experience       from '@/components/Experience.vue';
-import FeaturedProjects from '@/components/FeaturedProjects.vue';
 import Footer           from '@/components/Footer.vue';
 </script>
   

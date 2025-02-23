@@ -9,17 +9,16 @@
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-3">
-                <ProjectCard v-for="proj in featured" :key="proj.name" :project="proj"/>
+                <ProjectCard v-for="project in projects" :key="project.name" :project="project"/>
             </div>
         </section>
     </div>
 </template>
 
 <script setup lang="ts">
-import Projects from '@/data/Projects.json'
 import ProjectCard from '@/components/ProjectCard.vue';
 import { Icon } from '@iconify/vue';
-import { computed } from 'vue'
+import { getFeaturedProjects } from '@/composables/useProjects';
 
-const featured = computed(() => Projects.data.filter(project => project.featured));
+const projects = getFeaturedProjects();
 </script>

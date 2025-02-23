@@ -11,7 +11,10 @@
         <div class="flex flex-col justify-between p-4 w-full h-full">
             <!-- Header -->
             <CardHeader class="p-0">
-                <CardTitle class="text-lg font-supreme font-semibold text-foreground">{{ project.name }}</CardTitle>
+                <div class="flex items-center justify-between">
+                    <CardTitle class="text-lg font-supreme font-semibold text-foreground inline">{{ project.name }}</CardTitle>
+                    <p class="font-supreme font-light text-foreground text-sm inline">{{ project.year }}</p>
+                </div>
                 <CardDescription class="text-muted-foreground font-supreme font-medium text-xs">{{ project.description }}</CardDescription>
             </CardHeader>
 
@@ -52,7 +55,9 @@ defineProps<{
     project: {
         "name": string;
         "description": string;
-        "href": string;
+        "year": string;
+        "type": string,
+        "organization": string,
         "img": string;
         "tags": string[];
         "links": {
