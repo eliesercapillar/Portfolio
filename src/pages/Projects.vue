@@ -11,7 +11,7 @@
   
 <script setup lang="ts">
 import RippleCircleBG   from '@/components/RippleCircleBG.vue'
-import NavBarDefault    from '@/components/NavBarDefault.vue';
+import NavBarDefault    from '@/components/NavBar.vue';
 import AllProjects      from '@/components/AllProjects.vue';
 import Footer           from '@/components/Footer.vue';
 </script>
