@@ -1,11 +1,13 @@
 <template>
-    <div>
-        <section>
-            <form action="https://formspree.io/f/mnnjynnq" method="POST" @submit="handleSubmit">
+    <div class="mx-auto max-w-3xl w-full mb-10">
+        <div><Toaster/></div>
+        <section class="mt-8 flex flex-col w-full">
+            <h2 class="text-3xl mb-4 font-medium">Contact Me</h2>
+            <form @submit.prevent="handleSubmit" class="space-y-4">
                 <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
                     <!-- Name -->
                     <div class="h-16">
-                        <input
+                        <Input
                         v-model="form.name"
                         type="text"
                         name="name"
@@ -18,7 +20,7 @@
 
                     <!-- Email -->
                     <div class="h-16">
-                        <input
+                        <Input
                         v-model="form.email"
                         type="email"
                         name="email"
@@ -31,31 +33,27 @@
 
                     <!-- Message -->
                     <div class="h-32 sm:col-span-2">
-                        <textarea
+                        <Textarea
                         v-model="form.message"
                         name="message"
                         rows="4"
                         placeholder="Leave feedback or just say hello!"
                         class="resize-none input"
                         required
-                        ></textarea>
+                        />
                     </div>
                 </div>
                 <div class="mt-2">
-                    <button type="submit" :disabled="isSubmitting" class="w-full disabled:opacity-50 btn">
+                    <Button type="submit" :disabled="isSubmitting" class="w-full disabled:opacity-50 btn">
                         <span v-if="isSubmitting" class="flex items-center">
-                        Sending...
-                        <Icon icon="radix-icons:reload" class="ml-2 animate-spin" />
+                            Sending...
+                            <Icon icon="radix-icons:reload" class="ml-2 animate-spin" />
                         </span>
                         <span v-else class="flex items-center">
-                        Send Message
-                        <Icon icon="radix-icons:paper-plane" class="ml-2" />
+                            Send Message
+                            <Icon icon="radix-icons:paper-plane" class="ml-2" />
                         </span>
-                    </button>
-                    <p class="mt-4 text-xs text-muted-foreground">
-                        By submitting this form, I agree to the
-                        <a href="/privacy" class="link font-semibold">privacy&nbsp;policy.</a>
-                    </p>
+                    </Button>
                 </div>
             </form>
         </section>
@@ -65,23 +63,63 @@
 <script setup>
 import { ref } from "vue";
 import { Icon } from '@iconify/vue';
+import Input from "@/components/ui/input/Input.vue";
+import Textarea from "@/components/ui/textarea/Textarea.vue";
+import Button from "@/components/ui/button/Button.vue";
+import Toaster from '@/components/ui/toast/Toaster.vue'
+import { useToast } from '@/components/ui/toast/use-toast'
 
-// Form data
+const { toast } = useToast();
+
+// Form state
 const form = ref({
   name: "",
   email: "",
   message: "",
 });
 
-// Loading state
+// UI states
 const isSubmitting = ref(false);
 
-const handleSubmit = () => {
+// Handle form submission
+const handleSubmit = async () => {
   isSubmitting.value = true;
 
-  // Simulate a delay for UX (Formspree handles the real submission)
-  setTimeout(() => {
+  try {
+    const response = await fetch("https://formspree.io/f/mnnjynnq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form.value),
+    });
+
+    if (!response.ok)
+    {
+        toast({
+            title: "Oh no! Something went wrong.",
+            description: error.message,
+            variant: "destructive",
+        });
+        form.value = { name: "", email: "", message: "" };
+        throw new Error("Something went wrong. Please try again later.");
+    }
+
+    toast({
+        title: "Message Sent!",
+        description: "Thanks for reaching out! I'll get back to you as soon as I can.",
+    });
+    form.value = { name: "", email: "", message: "" };
+  } 
+  catch (error) 
+  {
+    toast({
+        title: "Oh no! Something went wrong.",
+        description: error.message,
+        variant: "destructive",
+    });
+  } 
+  finally 
+  {
     isSubmitting.value = false;
-  }, 2000);
+  }
 };
 </script>
