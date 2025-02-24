@@ -25,8 +25,7 @@
                     </div>
                 </div>
                 <Avatar size="xlg" shape="circle">
-                    <AvatarImage v-if="!pabloPictureOn" src="/headshot-main-1000x1000.jpg" alt="Photo of Elieser" />
-                    <AvatarImage v-else src="/headshot-alt-1000x1000.jpg" alt="Photo of Elieser" />
+                    <AvatarImage :src="getHeadshot()" alt="Photo of Elieser" />
                     <AvatarFallback>EC</AvatarFallback>
                 </Avatar>
             </div>
@@ -40,12 +39,23 @@ import Socials from '@/components/Socials.vue';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button';
 import { Icon } from '@iconify/vue';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 let pabloPictureOn = ref(false);
+let preloadedPablo = new Image();
+let preloadedMain = new Image();
 
-function showPablo()
-{
+// Preload the alternate image when component mounts
+onMounted(() => {
+    preloadedPablo.src = "/headshot-alt-1000x1000.jpg";
+    preloadedMain.src = "/headshot-main-1000x1000.jpg";
+});
+
+function getHeadshot() {
+    return pabloPictureOn.value ? "/headshot-alt-1000x1000.jpg" : "/headshot-main-1000x1000.jpg";
+}
+
+function showPablo() {
     pabloPictureOn.value = !pabloPictureOn.value;
 }
 </script>
