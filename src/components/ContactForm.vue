@@ -37,7 +37,7 @@
                         v-model="form.message"
                         name="message"
                         rows="4"
-                        placeholder="Leave feedback or just say hello!"
+                        placeholder="Feel free to contact me about career opportunities, collaboration, feedback, or just to say hi!"
                         class="resize-none input"
                         required
                         />
