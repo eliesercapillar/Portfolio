@@ -19,5 +19,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/Portfolio', // Replace with your actual GitHub repository name
+  base: process.env.NODE_ENV === 'production' ? '/Portfolio' : '/', // Use '/' for dev, '/repo-name/' for prod
 })
