@@ -1,5 +1,6 @@
-# Vue 3 + TypeScript + Vite
+# My Personal Portfolio!
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+My personal portfolio site for showcasing my work and experiences. Feel free to fork and modify for your own portfolios!
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+### Technologies Used
+![SkillIcons](https://skillicons.dev/icons?i=vue,vite,tailwind,ts,git,vercel)
