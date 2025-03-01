@@ -41,7 +41,7 @@
         },
         {
             "name": "StudyBuddy",
-            "description": "A feature-rich gamified study tracker, with a buddy collection and leveling system.",
+            "description": "A feature-rich gamified study tracker, complete with a buddy collection and leveling system.",
             "year": "2023",
             "img": "studybuddy.jpg",
             "type": "school",
@@ -115,7 +115,7 @@
         },
         {
             "name": "Artefacta",
-            "description": "A prototype for a personalized AI museum tour guide, along with a set of AI-powered, feature rich tools, to help museum curators manage galleries.",
+            "description": "A personalized AI museum tour guide, along with a set of AI-powered, feature rich tools, to help museum curators manage galleries.",
             "year": "2024",
             "img": "artefacta.jpg",
             "type": "work",

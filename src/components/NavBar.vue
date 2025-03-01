@@ -6,7 +6,7 @@
                 :key="page.name" 
                 :class="['font-supreme font-normal', 
                 index === activeIndex ? 'text-foreground cursor-pointer' : 'text-muted-foreground hover:opacity-50']">
-                    <a v-if="index !== activeIndex" :href="page.href">{{ page.name }}</a>
+                    <RouterLink v-if="index !== activeIndex" :to="page.href">{{ page.name }}</RouterLink>
                     <span v-else>{{ page.name }}</span>
                 </li>
             </ul>
@@ -18,6 +18,7 @@
 </template>
 
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
 import ModeToggle from './ModeToggle.vue';
 import Pages from '@/data/Pages.json'
 
