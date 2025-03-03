@@ -7,7 +7,7 @@
                     <h2 class="pt-2 text-2xl">Software Developer</h2>
                     <div class="flex flex-row pt-2">
                         <Icon icon="lucide:map-pin" class="w-6 h-6"/>
-                        <p class="ml-2 text-md">Winnipeg, Manitoba, Canada 🇨🇦</p>
+                        <p class="ml-2 text-md">GTA, Ontario, Canada 🇨🇦</p>
                     </div>
                     <p class="mt-2 text-muted-foreground">
                         I like to make things 💻, drink smoothies 🥤, 
