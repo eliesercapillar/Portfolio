@@ -4,7 +4,7 @@
             <div class="flex flex-col-reverse items-start gap-8 md:flex-row md:items-center md:justify-between">
                 <div class="flex flex-col font-normal">
                     <h1 class="font-spaceGrotesk font-semibold text-5xl">Elieser Capillar</h1>
-                    <h2 class="pt-2 text-2xl">Software Developer</h2>
+                    <h2 class="pt-2 text-2xl">.NET Software Developer</h2>
                     <div class="flex flex-row pt-2">
                         <Icon icon="lucide:map-pin" class="w-6 h-6"/>
                         <p class="ml-2 text-md">Mississauga, ON, Canada 🇨🇦</p>
