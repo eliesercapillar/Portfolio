@@ -88,19 +88,19 @@ const handleSubmit = async () => {
   try {
     const response = await fetch("https://formspree.io/f/mnnjynnq", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
         body: JSON.stringify(form.value),
     });
 
     if (!response.ok)
     {
-        toast({
-            title: "Oh no! Something went wrong.",
-            description: error.message,
-            variant: "destructive",
-        });
         form.value = { name: "", email: "", message: "" };
-        throw new Error("Something went wrong. Please try again later.");
+        
+        const data = await response.json();
+        throw new Error(data.error);
     }
 
     toast({
@@ -113,7 +113,7 @@ const handleSubmit = async () => {
   {
     toast({
         title: "Oh no! Something went wrong.",
-        description: error.message,
+        description: error.message || "Something went wrong. Please try again later.",
         variant: "destructive",
     });
   } 
